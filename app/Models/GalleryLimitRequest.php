@@ -26,6 +26,19 @@ class GalleryLimitRequest extends Model
         return $this->belongsTo(ProfessionalProfile::class);
     }
 
+    protected static function booted()
+    {
+        static::updated(function ($request) {
+            if ($request->isDirty('status') && $request->status === 'approved') {
+                if ($request->professionalProfile) {
+                    $request->professionalProfile->update([
+                        'gallery_limit_override' => $request->requested_limit,
+                    ]);
+                }
+            }
+        });
+    }
+
     // ── State Helpers ────────────────────────────────────
 
     public function isPending(): bool

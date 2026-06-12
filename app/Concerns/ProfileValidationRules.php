@@ -40,7 +40,7 @@ trait ProfileValidationRules
         return [
             'required',
             'string',
-            'max:255',
+            'regex:/^[0-9]{9}$/',
             $userId === null
                 ? Rule::unique(User::class)
                 : Rule::unique(User::class)->ignore($userId),
