@@ -170,6 +170,7 @@ class CategoryPage extends Component
         $description = "ابحث عن أفضل {$this->category->name} مع تقييمات حقيقية";
 
         return view('livewire.category-page')
+            ->layout('components.layouts.app-shell')
             ->title($title)
             ->layoutData(['metaDescription' => $description]);
     }

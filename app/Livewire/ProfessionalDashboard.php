@@ -217,6 +217,6 @@ class ProfessionalDashboard extends Component
             'canUpload' => $canUpload,
             'hasPendingLimitRequest' => $hasPendingLimitRequest,
             'user' => Auth::user(),
-        ])->title('لوحة الحرفي - MyMetier');
+        ])->layout('components.layouts.app-shell')->title('لوحة الحرفي - MyMetier');
     }
 }

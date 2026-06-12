@@ -244,6 +244,6 @@ class UpgradePage extends Component
             'cities'     => $cities,
             'districts'  => $districts,
             'user'       => Auth::user(),
-        ]);
+        ])->layout('components.layouts.app-shell');
     }
 }

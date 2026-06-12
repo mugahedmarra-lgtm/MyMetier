@@ -73,6 +73,6 @@ class PublicRequestsPage extends Component
             'requests' => $requests,
             'categories' => $categories,
             'cities' => $cities,
-        ])->title('الطلبات العامة - MyMetier');
+        ])->layout('components.layouts.app-shell')->title('الطلبات العامة - MyMetier');
     }
 }

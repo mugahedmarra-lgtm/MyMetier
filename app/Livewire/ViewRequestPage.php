@@ -21,6 +21,6 @@ class ViewRequestPage extends Component
 
     public function render()
     {
-        return view('livewire.view-request-page')->title($this->request->title . ' - MyMetier');
+        return view('livewire.view-request-page')->layout('components.layouts.app-shell')->title($this->request->title . ' - MyMetier');
     }
 }

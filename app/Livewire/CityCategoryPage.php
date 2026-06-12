@@ -154,6 +154,7 @@ class CityCategoryPage extends Component
         $description = "ابحث عن أفضل {$this->category->name} في {$this->city->name} مع تقييمات حقيقية";
 
         return view('livewire.city-category-page')
+            ->layout('components.layouts.app-shell')
             ->title($title)
             ->layoutData(['metaDescription' => $description]);
     }

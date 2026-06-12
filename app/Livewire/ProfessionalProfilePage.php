@@ -172,6 +172,6 @@ class ProfessionalProfilePage extends Component
         /** @var mixed $view */
         $view = view('livewire.professional-profile-page');
         
-        return $view->title($this->profile->display_name . ' | MyMetier');
+        return $view->layout('components.layouts.app-shell')->title($this->profile->display_name . ' | MyMetier');
     }
 }
