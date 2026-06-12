@@ -46,9 +46,9 @@
                         <label for="remember" class="mr-2 block text-sm text-gray-900 dark:text-gray-300 cursor-pointer">تذكرني</label>
                     </div>
 
-                    <div class="text-sm">
+                    {{-- <div class="text-sm">
                         <a href="#" class="font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 transition">نسيت كلمة المرور؟</a>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <div class="pt-2">
